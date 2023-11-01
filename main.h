@@ -3,6 +3,6 @@
 
 int _putchar(char);
 
-int
+
 
 #endif
