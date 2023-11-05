@@ -17,7 +17,7 @@ typedef struct fm
     char fun;
 
     /** hold operation */
-    int (*f)(valist);
+    int (*f)(va_list);
 
 } form;
 
