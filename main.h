@@ -12,7 +12,7 @@
  * @f: returning function
 */
 
-typedef struct fm
+typedef struct frm
 {
     /** format spec holder */
     char fun;
@@ -20,7 +20,7 @@ typedef struct fm
     /** hold operation */
     int (*f)(va_list);
 
-} form;
+} fm_t;
 
 int (*get_func(char format))(va_list args);
 
