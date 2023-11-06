@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-int _printf(const char *format)
+int _printf(const char *format, ...)
 {
     int trace =0;
 
