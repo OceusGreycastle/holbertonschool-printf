@@ -8,7 +8,8 @@
 
 
 /**
- * 
+ * @fun: operational variable
+ * @f: returning function
 */
 
 typedef struct fm
