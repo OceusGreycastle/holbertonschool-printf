@@ -3,21 +3,21 @@
 
 int (*get_func(char format))(va_list args)
 {
-    form forms[] = {
-        { 'c', print_char},
-        { 's', print_str},
-        { 'd', print_int),
-        {'\0', NULL}
-        };
+	form forms[] = {
+		{'c', print_char},
+		{'s', print_str},
+		{'d', print_int},
+		{'\0', NULL}
+		};
 
-        int i = 0;
+		int i = 0;
 
-        while (forms[i].op !- '\0')
-        {
-            if (forms[i].op == format)
-            return (forms[i].f);
-            i++;
-        }
-    }
-    return (NULL);
+		while (forms[i].op !- '\0')
+		{
+			if (forms[i].op == format)
+			return (forms[i].f);
+			i++;
+		}
+	}
+	return (NULL);
 }
