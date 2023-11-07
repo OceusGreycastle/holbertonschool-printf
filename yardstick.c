@@ -10,6 +10,6 @@ int yardstick(char *s)
 	int x = 0;
 
 	while (s[x] != '\0')
-		i++;
-	return (i);
+		x++;
+	return (x);
 }

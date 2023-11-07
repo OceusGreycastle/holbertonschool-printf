@@ -3,7 +3,7 @@
 
 int _printf(const char *format, ...)
 {
-    int trace =0;
+    int trace = 0;
 
     va_list args;
     va_start(args, format);

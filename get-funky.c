@@ -7,7 +7,7 @@
 */
 int (*get_func(char format))(va_list args)
 {
-	form forms[] = {
+	fm_t forms[] = {
 		{'c', print_char},
 		{'d', print_int},
 		{'s', print_str},
@@ -16,11 +16,11 @@ int (*get_func(char format))(va_list args)
 	};
 	int x = 0;
 
-	while (forms[i].op != '\0')
+	while (forms[x].fun != '\0')
 	{
-		if (forms[i].op == format)
-				return (forms[i].f);
-		i++;
+		if (forms[x].fun == format)
+				return (forms[x].f);
+		x++;
 	}
 	return (NULL);
 }
