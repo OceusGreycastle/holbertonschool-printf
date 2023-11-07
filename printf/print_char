@@ -1,0 +1,19 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
+
+/**
+ * print_char - prints character
+ * @args: data type format specifiers
+ *
+ * Return: printed chars num
+*/
+
+int print_char(va_list args)
+{
+	char r = va_arg(args, int);
+
+	putchar(r);
+	return (1);
+}
