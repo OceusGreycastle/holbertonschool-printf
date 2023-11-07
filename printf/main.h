@@ -14,17 +14,18 @@
 
 typedef struct frm
 {
-    /** format spec holder */
-    char fun;
+	/** format spec holder */
+	char fun;
 
-    /** hold operation */
-    int (*f)(va_list);
+	/** hold operation */
+	int (*f)(va_list);
 
 } fm_t;
 
 int (*get_func(char format))(va_list args);
 
 int _putchar(char);
+int putint(int);
 
 int _printf(const char *format, ...);
 
