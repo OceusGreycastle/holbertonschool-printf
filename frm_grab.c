@@ -6,7 +6,7 @@
 /**
  * frm_grab - get funct for format
  * @sp: format input
- * 
+ *
  * Return: pointer to the funct
 */
 
