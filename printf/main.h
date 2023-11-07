@@ -34,5 +34,7 @@ int print_str(va_list args);
 int print_int(va_list args);
 int print_percent(va_list args);
 int shoelace(va_list args);
+int print_no(va_list);
+int catcher(va_list);
 
 #endif
