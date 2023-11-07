@@ -43,12 +43,12 @@ int print_int(va_list args)
 		if (value == INT_MIN && track_dig == 1)
 		{
 			putchar('8');
-			count++;
+			i++;
 			track_dig = track_dig / 10;
 		}
 		else
 		{
-			i++
+			i++;
 			putchar(((abcalc / track_dig) % 10) + '0');
 			track_dig = track_dig / 10;
 		}
